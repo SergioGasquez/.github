@@ -1,9 +1,8 @@
 name: Add new issues to project
 
 on:
-  issues:
-    types:
-      - opened
+  repository_dispatch:
+    types: [org-workflow-bot]
 
 jobs:
   add-to-project:
